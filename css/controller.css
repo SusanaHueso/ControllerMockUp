@@ -1,0 +1,34 @@
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+
+    background-color: darkgray;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.outsiderectangle {
+    all: unset;
+    border: 4em solid grey;
+  width: 50vw;
+  height: 20vw;
+}
+.insiderectangle {
+    margin-left: -50px;
+   
+     background-color:black;
+  margin-top: -15px;
+  width: 62vw;
+  height: 28vw;
+}
