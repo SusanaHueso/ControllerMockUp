@@ -1,34 +1,111 @@
-
-
 body {
+  margin: 0;
+  padding: 0;
+  position: relative;
 
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  width: 100%;
 
-    height: 100vh;
-    width: 100vw;
+  background-color: white;
 
+  display: flex;
 
-    background-color: darkgray;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .outsiderectangle {
-    all: unset;
-    border: 4em solid grey;
-  width: 50vw;
-  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  border: 4em solid grey;
+  width: 50%;
+  height: 20%;
+  margin: 2px;
 }
 .insiderectangle {
-    margin-left: -50px;
-   
-     background-color:black;
-  margin-top: -15px;
-  width: 62vw;
-  height: 28vw;
+  background-color: black;
+
+  width: 100%;
+  height: 25vw;
+}
+
+.undercrossvertical {
+  display: flex;
+  flex-direction: column;
+
+  background: grey;
+  height: 130px;
+
+  position: relative;
+  width: 3%;
+}
+.undercrosshorizontal {
+  background: grey;
+  height: 35%;
+  left: -75%;
+  position: absolute;
+  top: 32%;
+  width: 250%;
+}
+
+.crosspad {
+  position: relative;
+
+  top: -14%;
+  left: -65%;
+}
+.crosspad:after {
+  position: relative;
+  content: "\2719";
+  font-size: 150px;
+  color: black;
+  font-weight: bold;
+}
+#positionbuttonleft {
+  right: 49%;
+}
+.smallrectangle {
+  position: relative;
+  border-radius: 8px;
+
+  width: 40%;
+  height: 10%;
+  right: -25%;
+  background: #90917e;
+}
+.whiterectangle {
+  position: relative;
+  border-radius: 8px;
+  top: 64px;
+
+  width: 40%;
+  height: 30%;
+  right: -25%;
+  background: white;
+}
+
+.blackbutton {
+  position: relative;
+  border-radius: 22px;
+  top: 56px;
+  width: 35%;
+  height: 18%;
+
+  background: black;
+}
+#blackbuttonleft {
+  right: -8%;
+}
+#blackbuttonright {
+  right: -56%;
+  top: 33px;
+}
+#smallrectanglemiddle {
+  top: 15px;
+}
+#smallrectanglemiddle2 {
+  top: 30px;
+}
+#smallrectanglebottom {
+  top: 125px;
 }
